@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GrowBiz - Business Solutions</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background-color: #f9f9f9;
+      color: #333;
+    }
+
+    /* Header */
+    header {
+      background-color: #004aad;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 50px;
+    }
+
+    header h1 {
+      font-size: 24px;
+      font-weight: bold;
+      letter-spacing: 1px;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 25px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: white;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    nav ul li a:hover {
+      color: #ffd700;
+    }
+
+    /* Hero Section */
+    .hero {
+      background: linear-gradient(135deg, #004aad, #0077ff);
+      color: white;
+      text-align: center;
+      padding: 120px 20px;
+    }
+
+    .hero h2 {
+      font-size: 48px;
+      margin-bottom: 15px;
+    }
+
+    .hero p {
+      font-size: 18px;
+      margin-bottom: 25px;
+    }
+
+    .hero a {
+      text-decoration: none;
+      background-color: #ffd700;
+      color: #004aad;
+      padding: 12px 30px;
+      border-radius: 30px;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .hero a:hover {
+      background-color: white;
+      color: #004aad;
+    }
+
+    /* About Section */
+    .about {
+      padding: 80px 50px;
+      text-align: center;
+      background-color: #fff;
+    }
+
+    .about h3 {
+      font-size: 30px;
+      color: #004aad;
+      margin-bottom: 15px;
+    }
+
+    .about p {
+      max-width: 700px;
+      margin: 0 auto;
+      line-height: 1.6;
+      font-size: 17px;
+    }
+
+    /* Services Section */
+    .services {
+      background-color: #f1f5ff;
+      padding: 80px 50px;
+      text-align: center;
+    }
+
+    .services h3 {
+      font-size: 30px;
+      color: #004aad;
+      margin-bottom: 40px;
+    }
+
+    .service-boxes {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 25px;
+    }
+
+    .box {
+      background-color: white;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .box:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+    }
+
+    .box h4 {
+      color: #004aad;
+      margin-bottom: 10px;
+    }
+
+    .box p {
+      font-size: 15px;
+      line-height: 1.5;
+    }
+
+    /* Contact Section */
+    .contact {
+      background-color: #fff;
+      text-align: center;
+      padding: 60px 50px;
+    }
+
+    .contact h3 {
+      font-size: 28px;
+      color: #004aad;
+      margin-bottom: 15px;
+    }
+
+    .contact p {
+      margin-bottom: 20px;
+    }
+
+    .contact a {
+      text-decoration: none;
+      background-color: #004aad;
+      color: white;
+      padding: 10px 25px;
+      border-radius: 25px;
+      transition: 0.3s;
+    }
+
+    .contact a:hover {
+      background-color: #0077ff;
+    }
+
+    /* Footer */
+    footer {
+      background-color: #004aad;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      font-size: 14px;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>GrowBiz</h1>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Empowering Businesses to Grow</h2>
+    <p>GrowBiz provides smart solutions to take your business to the next level.</p>
+    <a href="#">Get Started</a>
+  </section>
+
+  <section class="about">
+    <h3>About Us</h3>
+    <p>GrowBiz is a creative business solution company helping startups and enterprises 
+       achieve success. We specialize in digital marketing, strategy building, and 
+       brand promotion to make your business shine in the competitive market.</p>
+  </section>
+
+  <section class="services">
+    <h3>Our Services</h3>
+    <div class="service-boxes">
+      <div class="box">
+        <h4>Digital Marketing</h4>
+        <p>Boost your online presence with our powerful digital marketing strategies designed for growth.</p>
+      </div>
+      <div class="box">
+        <h4>Business Strategy</h4>
+        <p>We craft customized business plans and growth strategies for sustainable success.</p>
+      </div>
+      <div class="box">
+        <h4>Brand Promotion</h4>
+        <p>Our creative team ensures your brand reaches the right audience and creates lasting impressions.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact">
+    <h3>Contact Us</h3>
+    <p>Have questions or want to work with us? Let’s build your business together.</p>
+    <a href="#">Contact Now</a>
+  </section>
+
+  <footer>
+    © 2025 GrowBiz. All Rights Reserved.
+  </footer>
+
+</body>
+</html>
